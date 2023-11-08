@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Juegos</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600;1,700&family=Roboto:ital,wght@0,300;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="fondo">
+    <div class="loading-container">
+        <div class="contenedor">
+            <div class="loader">
+                <div class="dino dino-corriendo"></div>
+            </div>
+            <p> Loading . . . </p>
+        </div>
+        <div class="loading-progress">
+            <div class="loading-bar"></div>
+            <div class="loading-text"></div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="left">
+            <button class="botHeader"><img id="toggleMenu" src="../images/menuHamburgusaCerrar.svg" alt=""></button>
+            <a id="logo" href="home.html">
+                <img class="imagenHeader" src="../images/Dino1.png" alt="">
+            </a>
+        </div>
+        <div class="right">
+            <button id="menuUserBtn" class="botHeader"><img class="imagenHeader"
+                    src="../images/icons8-super-mario-120.svg" alt=""><img class="imagenUsuario"
+                    src="../images/flechaDesplegar.svg" alt=""></button>
+        </div>
+    </header>
+    <!-- Menu Usuario -->
+    <nav id="menuPerfilUser" class="cerrado">
+        <button id="cerrarMenuBtn" class="closeUserMenu"><box-icon name='x' color='#939ab0'></box-icon></button>
+        <img class="imagenHeader" src="../images/icons8-super-mario-120.svg" alt="">
+        <p class="userName">LollyPop34</p>
+        <p>mateodesm@gmail.com</p>
+        <div class="menu-icon">
+            <box-icon name='user' color='#939ab0'></box-icon>
+            <p>Mi perfil</p>
+        </div>
+        <div class="menu-icon">
+            <box-icon type='solid' name='edit' color='#939ab0'></box-icon>
+            <p>Editar perfil</p>
+        </div>
+        <div class="menu-icon">
+            <box-icon name='cog' color='#939ab0'></box-icon>
+            <p>Configuración</p>
+        </div>
+        <a href="index.html" class="menu-icon">
+            <box-icon name='log-out' flip='vertical' color='#939ab0'></box-icon>
+            <p>Cerrar sesión</p>
+        </a>
+    </nav>
+    <!-- Fin Menu Usuario -->
+
+    <!-- Menu Hamburguesa -->
+    <nav id="menuHamburguesa">
+        <div class="categoria">
+            <p>Para Ti</p>
+            <img src="../images/Para ti.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Accion</p>
+            <img src="../images/accion.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Aventura</p>
+            <img src="../images/aventura.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Arcade</p>
+            <img src="../images/arcade.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Deportes</p>
+            <img src="../images/Deportes.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Simulacion</p>
+            <img src="../images/simulacion.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Estrategia</p>
+            <img src="../images/estrategia.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>De mesa</p>
+            <img src="../images/mesa.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Musica</p>
+            <img src="../images/musica.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Belleza</p>
+            <img src="../images/belleza.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Casual</p>
+            <img src="../images/casual-icon.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Terror</p>
+            <img src="../images/terror-icon.svg" alt="">
+        </div>
+        <div class="categoria">
+            <p>Supervivencia</p>
+            <img src="../images/survival-icon.svg" alt="">
+        </div>
+    </nav>
+    <!-- Fin Menu Hamburguesa -->
+    <main id="content">
+        <article>
+            <h1 class="title1">¡Bienvenido a Jurassic Juegos!</h1>
+            <h2 class="title">Destacados del Dia</h2>
+            <section class="carousel">
+                <div class="carouselContainer">
+                    <div class="carouselItem carouselItem1">
+                        <article class="bigCard">
+                            <div class="cardImage">
+                                <img src="../images/bigcarrrrrr.jpg" alt="Bartender The Celeb Mix.png">
+                            </div>
+                            <div class="bigCardShadow">
+                            </div>
+                            <div class="playIcon">
+                                <img src="../images/PlayIcon.svg" alt="4enraya">
+                            </div>
+                            <div class="bigCardInfo">
+                                <h2>SuperMario Bros</h2>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carouselItem carouselItem2">
+                        <article class="bigCard">
+                            <div class="cardImage">
+                                <img src="../images/4enrayaHD.jpg" alt="4enraya">
+                            </div>
+                            <div class="bigCardShadow">
+                            </div>
+                            <a href="../Html/4enraya.html" class="playIcon">
+                                <img src="../images/PlayIcon.svg" alt="4enraya">
+                            </a>
+                            <div class="bigCardInfo">
+                                <h2>4 En linea Pacman VS Blinkey</h2>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carouselItem carouselItem3">
+                        <article class="bigCard">
+                            <div class="cardImage">
+                                <img src="../images/bigcarr3.png" alt="4enraya">
+                            </div>
+                            <div class="bigCardShadow">
+                            </div>
+                            <div class="playIcon">
+                                <img src="../images/PlayIcon.svg" alt="4enraya">
+                            </div>
+                            <div class="bigCardInfo">
+                                <h2>Minecracft</h2>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carouselControlsContainer">
+
+                    </div>
+                </div>
+            </section>
+
+            <h3 class="title"> RECOMENDADOS PARA TI <br><span>Por que jugaste: Call Of Duty</span></h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                       
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Grounded.jpg" alt="Valorant">
+                            <h3> Grounded </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">  
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$12499</p>
+                            </div>
+                            <img class="imagen" src="../images/aventura/Hogwarts Legacy.jpg" alt="Valorant">
+                            <h3 class="titulo">Hogwarts Legacy </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$2345</p>
+                            </div>
+                            <img class="imagen" src="../images/superviviencia/Project Zomboid.jpg" alt="Valorant">
+                            <h3 class="titulo"> Project Zomboid </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/Sons Of The Forest.jpg" alt="Valorant">
+                            <h3> Sons Of The Forest </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/State of Decay 2.jpg" alt="Valorant">
+                            <h3> State of Decay 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Marvels Spider-man Miles Morales.jpg" alt="Valorant">
+                            <h3> Marvels Spider-man Miles </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Red Dead Redemption 2.jpg" alt="Valorant">
+                            <h3> Red Dead Redemption 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$888</p>
+                            </div>
+                            <img class="imagen" src="../images/superviviencia/Sunkenland.jpg" alt="Valorant">
+                            <h3 class="titulo"> Sunkenland </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="absolute">
+                            <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$5000</p>
+                        </div>
+                        <img class="imagen" src="../images/accion/Dragon ball fighterZ.jpg" alt="Valorant">
+                            <h3 class="titulo"> Dragon ball fighterZ</h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <div class="absolute">
+                                <div class="cart">
+                            <box-icon type='solid'  name='cart-add' color="#fff"></box-icon>
+                            </div>
+                            <p class="price">$2000</p>    
+                        </div>
+                            <img class="imagen" src="../images/accion/Apex Legends.jpg" alt="Valorant"> 
+                            <h3 class="titulo"> Apex Legends </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/CyberPunk.jpg" alt="Valorant">
+                            <h3> CyberPunk </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/Dota 2.jpg" alt="Valorant">
+                            <h3> Dota 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/Heretics Fork.jpg" alt="Valorant">
+                            <h3> Heretiks fort </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+           
+            <h3 class="title">Aventura</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Baldurs Gate 3.jpg" alt="Valorant">
+                            <h3> Baldurs Gate 3 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$10000</p>
+                            </div>
+                            <img class="imagen" src="../images/aventura/Farlight 84.jpg" alt="Valorant">
+                            <h3 class="titulo"> Farlight 84 </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Grand Theft Auto V.jpg" alt="Valorant">
+                            <h3> Grand Theft Auto V </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Grounded.jpg" alt="Valorant">
+                            <h3> Grounded </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$12499</p>
+                            </div>
+                            <img class="imagen" src="../images/aventura/Hogwarts Legacy.jpg" alt="Valorant">
+                            <h3 class="titulo">Hogwarts Legacy </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Marvels Spider-man Miles Morales.jpg" alt="Valorant">
+                            <h3> Marvels Spider-man Miles Morales </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Red Dead Redemption 2.jpg" alt="Valorant">
+                            <h3> Red Dead Redemption 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$19.99</p>
+                            </div>
+                            <img class="imagen" src="../images/aventura/Rust.jpg" alt="Valorant">
+                            <h3 class="titulo"> Rust </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Synced.jpg" alt="Valorant">
+                            <h3> Synced </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/aventura/Wayfinder.jpg" alt="Valorant">
+                            <h3> Wayfinder </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Accion</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/CallofDuty.png" alt="Valorant">
+                            <h3> Call of Duty </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$2000</p>
+                                
+                            </div>
+                            <img class="imagen" src="../images/accion/Apex Legends.jpg" alt="Valorant">
+                            <h3 class="titulo"> Apex Legends </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/CyberPunk.jpg" alt="Valorant">
+                            <h3> CyberPunk </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/Dota 2.jpg" alt="Valorant">
+                            <h3> Dota 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <div class="absolute">
+                            <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$5000</p>
+                        </div>
+                        <img class="imagen" src="../images/accion/Dragon ball fighterZ.jpg" alt="Valorant">
+                            <h3 class="titulo"> Dragon ball fighterZ</h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/Elden Ring.jpg" alt="Valorant">
+                            <h3> Elden Ring </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/God Eater 2.jpg" alt="Valorant">
+                            <h3> God Eater 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$8999.99</p>
+                            </div>
+                            <img class="imagen" src="../images/accion/Mortal Kombat.jpg" alt="Valorant">
+                            <h3 class="titulo"> Mortal Kombat</h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/Party Animals.jpg" alt="Valorant">
+                            <h3> Party Animals </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/accion/Stumble Guys.jpg" alt="Valorant">
+                            <h3> Stumble Guys </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Arcade</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/AK-xolotl.jpg" alt="Valorant">
+                            <h3> AK-xolotl </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$799.99</p>
+                            </div>
+                            <img class="imagen" src="../images/arcade/Bear Saber.jpg" alt="Valorant">
+                            <h3 class="titulo"> Bear Saber </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/CE COMBAT™ 7 SKIES UNKNOWN.jpg" alt="Valorant">
+                            <h3> CE COMBAT™ 7 SKIES UNKNOWN </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/Cuphead.jpg" alt="Valorant">
+                            <h3> Cuphead </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                          
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$200</p>
+                            </div>
+                            <img class="imagen" src="../images/arcade/Heretics Fork.jpg" alt="Valorant">
+                            <h3 class="titulo"> Heretics Fork </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/Just Shapes & Beats.jpg" alt="Valorant">
+                            <h3> Just Shapes & Beats </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/SOULCALIBUR VI.jpg" alt="Valorant">
+                            <h3> SOULCALIBUR VI 5 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$57</p>
+
+                            </div>
+                            <img class="imagen" src="../images/arcade/Street Fighter™ 6.jpg" alt="Valorant">
+                            <h3 class="titulo"> Street Fighter™ 6 </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/TEKKEN 8.jpg" alt="Valorant">
+                            <h3> TEKKEN 8 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/arcade/THE KING OF FIGHTERS XV.jpg" alt="Valorant">
+                            <h3> THE KING OF FIGHTERS XV </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Deportes</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/Deportes/Billar 3D - Pool.jpg" alt="Valorant">
+                            <h3> Billar 3D - Pool </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$25499.99</p>
+                            </div>
+                            <img class="imagen" src="../images/Deportes/EA SPORTS FC™ 24.jpg" alt="Valorant">
+                            <h3 class="titulo"> EA SPORTS FC™ 24 </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/Deportes/EA SPORTS™ FIFA 23.jpg" alt="Valorant">
+                            <h3> EA SPORTS™ FIFA 23 5 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Deportes/eFootball™ 2024.jpg" alt="Valorant">
+                            <h3> eFootball™ 2024 5 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$859.99</p>
+                            </div>
+                            <img class="imagen" src="../images/Deportes/F1® 23.jpg" alt="Valorant">
+                            <h3 class="titulo"> F1® 23 </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Deportes/FIFA 22.jpg" alt="Valorant">
+                            <h3> FIFA 22 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Deportes/Forza Motorsport.jpg" alt="Valorant">
+                            <h3> Forza Motorsport </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$8000</p>
+                                
+                            </div>
+                            <img class="imagen" src="../images/Deportes/Tony Hawk's™ Pro Skater™.jpg" alt="Valorant">
+                            <h3 class="titulo"> Tony Hawk's™ Pro Skater™ </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Deportes/Undisputed.jpg" alt="Valorant">
+                            <h3> Undisputed </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Deportes/Walkabout Mini Golf VR.jpg" alt="Valorant">
+                            <h3> Walkabout Mini Golf VR </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Simulación</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/Simulacion/Car Mechanic Simulator 2021.jpg" alt="Valorant">
+                            <h3> Car Mechanic Simulator 2021 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$9000</p>
+                            </div>
+                            <img class="imagen" src="../images/Simulacion/Contraband Police.jpg" alt="Valorant">
+                            <h3 class="titulo"> Contraband Police </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/Simulacion/DEATHLOOP.jpg" alt="Valorant">
+                            <h3> DEATHLOOP </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Simulacion/Euro Truck Simulator 2.jpg" alt="Valorant">
+                            <h3> Euro Truck Simulator 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$10000</p>
+                            </div>
+                            <img class="imagen" src="../images/Simulacion/Farming Simulator 22.jpg" alt="Valorant">
+                            <h3 class="titulo"> Farming Simulator 22 </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Simulacion/House Flipper.jpg" alt="Valorant">
+                            <h3> House Flipper </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Simulacion/PowerWash Simulator.jpg" alt="Valorant">
+                            <h3> PowerWash Simulator </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$7000</p>
+                            </div>
+                            <img class="imagen" src="../images/Simulacion/Rival Stars Horse Racing.jpg" alt="Valorant">
+                            <h3 class="titulo"> Rival Stars Horse Racing </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Simulacion/Russian Fishing 4.jpg" alt="Valorant">
+                            <h3> Russian Fishing 4 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/Simulacion/SnowRunner.jpg" alt="Valorant">
+                            <h3> SnowRunner </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">De mesa</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/de mesa/Astrea Six-Sided Oracles.jpg" alt="Valorant">
+                            <h3> Astrea Six-Sided Oracles </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                          
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$1999</p>
+                            </div>
+                            <img class="imagen" src="../images/de mesa/Friends vs Friends.jpg" alt="Valorant">
+                            <h3 class="titulo"> Friends vs Friends </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/de mesa/Governor of Poker 3.jpg" alt="Valorant">
+                            <h3> Governor of Poker 3 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/de mesa/GWENT The Witcher Card Game.jpg" alt="Valorant">
+                            <h3> GWENT The Witcher Card Game </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$120</p>
+                            </div>
+                            <img class="imagen" src="../images/de mesa/KARDS - El juego de cartas de la Segunda Guerra Mundial.jpg" alt="Valorant">
+                            <h3 class="titulo"> KARDS - El juego de cartas de la SGM </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/de mesa/MARVEL SNAP.jpg" alt="Valorant">
+                            <h3> MARVEL SNAP </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/de mesa/Ooblets.jpg" alt="Valorant">
+                            <h3> Ooblets </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$230</p>
+                            </div>
+                            <img class="imagen" src="../images/de mesa/Reigns.jpg" alt="Valorant">
+                            <h3 class="titulo"> Reigns </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/de mesa/ROUNDS.jpg" alt="Valorant">
+                            <h3> ROUNDS </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/de mesa/Tabletop Simulator.jpg" alt="Valorant">
+                            <h3> Tabletop Simulator </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">De musica</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/musica/BPM BULLETS PER MINUTE.jpg" alt="Valorant">
+                            <h3> BPM BULLETS PER MINUTE </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$300</p>
+                            </div>
+                            <img class="imagen" src="../images/musica/Groove Gunner.jpg" alt="Valorant">
+                            <h3 class="titulo"> Groove Gunner </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/musica/Interballistic Symphony.jpg" alt="Valorant">
+                            <h3> Interballistic Symphony </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/musica/Muse Dash.jpg" alt="Valorant">
+                            <h3> Muse Dash </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$1000000</p>
+                            </div>
+                            <img class="imagen" src="../images/musica/No Straight Roads Encore Edition.jpg" alt="Valorant">
+                            <h3 class="titulo"> No Straight Roads Encore Edition </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/musica/Road 96 🛣️.jpg" alt="Valorant">
+                            <h3> Road 96 🛣️ </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/musica/Rocksmith® 2014 Edition.jpg" alt="Valorant">
+                            <h3>Rocksmith® 2014 Edition </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$869</p>
+                            </div>
+                            <img class="imagen" src="../images/musica/Shy Cats Hidden Orchestra.jpg" alt="Valorant">
+                            <h3 class="titulo"> Shy Cats Hidden Orchestra </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/musica/Sing Together.jpg" alt="Valorant">
+                            <h3> Sing Together </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/musica/Unplugged.jpg" alt="Valorant">
+                            <h3> Unplugged </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Belleza</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/belleza/Crush Crush.jpg" alt="Valorant">
+                            <h3> Crush Crush </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$00.00</p>
+                            </div>
+                            <img class="imagen" src="../images/belleza/Doki Doki Literature Club Plus!.jpg" alt="Valorant">
+                            <h3 class="titulo"> Doki Doki Literature Club Plus! </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/belleza/Eternights.jpg" alt="Valorant">
+                            <h3> Eternights </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/belleza/Find Love or Die Trying.jpg" alt="Valorant">
+                            <h3> Find Love or Die Trying </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$69</p>
+                            </div>
+                            <img class="imagen" src="../images/belleza/For the Queen.jpg" alt="Valorant">
+                            <h3 class="titulo"> For the Queen </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/belleza/FreshWomen.jpg" alt="Valorant">
+                            <h3> FreshWomen </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/belleza/Koikatsu Party.jpg" alt="Valorant">
+                            <h3> Koikatsu Party </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$719.99</p>
+                            </div>
+                            <img class="imagen" src="../images/belleza/Robolife2 - Nova Duty.jpg" alt="Valorant">
+                            <h3 class="titulo"> Robolife2 - Nova Duty </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/belleza/Senren＊Banka.jpg" alt="Valorant">
+                            <h3> Senren＊Banka </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/belleza/The Sims™ 4.jpg" alt="Valorant">
+                            <h3> The Sims™ 4 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Terror</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/terror/Barotrauma.jpg" alt="Valorant">
+                            <h3> Barotrauma </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                          
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$9009</p>
+                            </div>
+                            <img class="imagen" src="../images/terror/CODE VEIN.jpg" alt="Valorant">
+                            <h3 class="titulo"> /CODE VEIN </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/terror/DARK SOULS™ II.jpg" alt="Valorant">
+                            <h3> DARK SOULS™ II </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/terror/Left 4 Dead.jpg" alt="Valorant">
+                            <h3> Left 4 Dead </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$456</p>
+                            </div>
+                            <img class="imagen" src="../images/terror/Nioh 2.jpg" alt="Valorant">
+                            <h3 class="titulo"> Nioh 2 </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/terror/Phasmophobia.jpg" alt="Valorant">
+                            <h3> Phasmophobia </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/terror/Resident Evil 4.jpg" alt="Valorant">
+                            <h3> Resident Evil 4 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                          
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$9050</p>
+                            </div>
+                            <img class="imagen" src="../images/terror/Sekiro.jpg" alt="Valorant">
+                            <h3 class="titulo"> Sekiro </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/terror/Subnautica.jpg" alt="Valorant">
+                            <h3> Subnautica </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/terror/Warhammer.jpg" alt="Valorant">
+                            <h3> /Warhammer</h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Casual</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/casual/Aimlabs.jpg" alt="Valorant">
+                            <h3> Aimlabs </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$5646468.99</p>
+                            </div>
+                            <img class="imagen" src="../images/casual/Bloons TD 6.jpg" alt="Valorant">
+                            <h3 class="titulo"> Bloons TD 6 </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/casual/Cities Skylines.jpg" alt="Valorant">
+                            <h3> Cities Skylines </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/casual/DAVE THE DIVER.jpg" alt="Valorant">
+                            <h3> DAVE THE DIVER </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$21314.99</p>
+                            </div>
+                            <img class="imagen" src="../images/casual/Goose Goose Duck.jpg" alt="Valorant">
+                            <h3 class="titulo"> Goose Goose Duck </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/casual/Riichi City.jpg" alt="Valorant">
+                            <h3> Riichi City </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/casual/Stardew Valley.jpg" alt="Valorant">
+                            <h3> Stardew Valley </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$559</p>
+                            </div>
+                            <img class="imagen" src="../images/casual/Storyteller.jpg" alt="Valorant">
+                            <h3 class="titulo"> Storyteller </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/casual/Town of Salem 2.jpg" alt="Valorant">
+                            <h3> Town of Salem 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/casual/Unrailed!.jpg" alt="Valorant">
+                            <h3> Unrailed! </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+            <h3 class="title">Supervivencia</h3>
+            <section class="carouselChico">
+                <div class="carouselChicoContainer">
+                    <div class="carouselChicoCardContainer">
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/Hunt Showdown.jpg" alt="Valorant">
+                            <h3> Hunt Showdown </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$34355</p>
+                            </div>
+                            <img class="imagen" src="../images/superviviencia/Land of the Vikings.jpg" alt="Valorant">
+                            <h3 class="titulo">Land of the Vikings </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/NARAKA.jpg" alt="Valorant">
+                            <h3> NARAKA </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/No Man's Sky.jpg" alt="Valorant">
+                            <h3> No Man's Sky </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$2345</p>
+                            </div>
+                            <img class="imagen" src="../images/superviviencia/Project Zomboid.jpg" alt="Valorant">
+                            <h3 class="titulo"> Project Zomboid </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/Sons Of The Forest.jpg" alt="Valorant">
+                            <h3> Sons Of The Forest </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/State of Decay 2.jpg" alt="Valorant">
+                            <h3> State of Decay 2 </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                        <div class="card">
+                           
+                            <div class="absolute">
+                                <div class="cart">
+                                <box-icon type='solid' name='cart-add' color="#fff"></box-icon>
+                            </div>
+                                <p class="price">$888</p>
+                            </div>
+                            <img class="imagen" src="../images/superviviencia/Sunkenland.jpg" alt="Valorant">
+                            <h3 class="titulo"> Sunkenland </h3>
+                            <p><button class="btnBuy">Comprar</button></p>
+                        </div>
+                        <div class="card">
+                            <img class="imagen game" src="../images/superviviencia/Tom Clancy's Ghost Recon® Wildlands.jpg" alt="Valorant">
+                            <h3> Tom Clancy's Ghost Recon® Wildlands </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div><div class="card">
+                            <img class="imagen game" src="../images/superviviencia/Valheim.jpg" alt="Valorant">
+                            <h3> Valheim </h3>
+                            <p><button class="button-game">Jugar</button></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="carouselChicoControls">
+                    <button class="carouselChicoButtonRight">
+                    </button>
+                    <button class="carouselChicoButtonLeft">
+                    </button>
+                </div>
+            </section>
+        </article>
+        <div class="botFooter">
+            <a id="scrollTop" href="#fondo"><img src="../images/scrollToTopFooter.svg"alt=""></a>
+        </div>
+    </main>
+    <footer id="footer">
+        <svg id="svg" viewBox="0 0 120 28">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+               1 0 0 0 0  
+               0 1 0 0 0  
+               0 0 1 0 0  
+               0 0 0 13 -9" result="goo " />
+                    <xfeBlend in="SourceGraphic" in2="goo" />
+                </filter>
+                <path id="wave"
+                    d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+            </defs>
+
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+
+            <g class="gooeff" filter="url(#goo)">
+                <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+                <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+                <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+                <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+                <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+                <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+                <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+                <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+                <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+                <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+                <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+                <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+
+                <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+                <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+                <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+                <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+                <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+                <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            </g>
+            <!-- g mask="url(#xxx)">
+        <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </g>
+      </g -->
+
+        </svg>
+        <div id="contFooter">
+            
+            <div class="info">
+                <ul class="legalPrivacidad">
+                    <p>Legal & Privacidad</p>
+                    <li>Políticas de Privacidad</li>
+                    <li>Información de Marcas Registradas</li>
+                    <li>Términos de Uso</li>
+                    <li>Publica tu juego</li>
+                    <li>Políticas de reembolso de la tienda</li>
+                    <li>Nuestras politicas</li>
+                    <li>Seguridad de la cuenta</li>
+                    <li>Publicidad</li>
+                    <li>Cyberbullying</li>
+                   
+                </ul>
+                <ul class="sobreNosotros">
+                    <p>Sobre nosotros</p>
+                    <li>FAQs</li>
+                    <li>Gestionar preferencias</li>
+                    <li>Contacto</li>
+                    <li>Nuestra empresa</li>
+                    <li>Socios</li>
+                    <li>Horarios de atención</li>
+                    <li>Ubicaciones de la empresa</li>
+                    <li>Información legal de la empresa</li>
+                    <li>Centro de ayuda</li>
+                 
+                </ul>
+
+                <ul class="ayuda">
+                    <p>Ayuda</p>
+                    <li>Preguntas frecuentes</li>
+                    <li>Como funciona la app</li>
+                    <li>Guia de usuario</li>
+                    <li>Solicitudes de asistencia</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Como jugar</li>
+                    <li>Como crear un usuario</li>
+                    <li>Juegos con AdobeFlash</li>
+                    <li>Resumen de precios</li>
+                    <li>Accesibilidad</li>
+                    
+                </ul>
+
+                <ul class="navegacion">
+                    <p>Navegación</p>
+                    <li>Home</li>
+                    <li>Servicio</li>
+                     <li>Favoritos</li>
+                    <li>Blog</li>
+                    <li>Juegos gratis</li>
+                    <li>Juegos en tendencia</li>
+                    <li>Juegos premium</li>
+                    <li>Juegos multijugador</li>
+                    
+                </ul>
+
+                <ul>
+                    <p>SEGUINOS</p>
+            <li><img src="../images/icon-face.svg" alt=""></li>
+            <li><img src="../images/icon-twitter.svg" alt=""></li>
+           
+                  </ul>  
+
+            </div>
+                
+            
+       
+            </div>
+            <div class="copy">
+                <p>Copyright © 2023 JURASSIC JUEGOS todos los derechos reservados</p>
+            </div>
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="../Js/userMenu.js"></script>
+    <script src="../Js/burguerMenu.js"></script>
+    <script src="../Js/carga.js"></script>
+    <script src="../Js/card.js"></script>
+    <script src="../Js/carrousel.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+Hola Luca, van las correcciones:
+- El Design System está bueno, pero parece que no lo usaron mucho!
+- No deberían  intercambiar entre el violeta y el azul como “primarios” en el sitio, o uno u otro. (el violeta está mejor trabajado)
+- Hay íconos e imágenes deformadas. También pasa en paneles, como el del Perfil de Usuario
+- Hay íconos (como la corona) que no se entienden que significan
+- Mejorar el esquema de juego comprado, juego gratis y juego por comprar.
+- La idea del menú Hamburguesa como panel sticky, está bueno, ojo la implementación.
+- El Fat footer no es fat footer. Debe tener links como: sobre nosotros, contactanos, nuestras politicas, etc
+- Sugeridos o Recomendados, podría decir por qué es un Recomendado. (Recomendado del día, recomendado en base a lo que el usuario jugó, etc). No se resalta tampoco…
+- Diferencia de Destacados con “Para tí”?
+- Hay componentes como botones (Jugar por ejemplo) que se usan una sola vez a lo largo del sitio.
+- Al seleccionar un juego el efecto no es muy bueno (lo achica)
+- (paso una vez) En la página del juego, el Header también aparece como footer
+- El logo debe ir al Home
+- Hay algunos dramas de uniformidad (carrusel de destacados es cuadrado, los cards son con bordes redondeados, la línea divisoria en el 4 en Línea y las líneas de los comentarios, etc)
+- Hay varios problemas de alineación y agrupamiento en el sitio (Panel Burger con cards a la derecha, "Para tí" con el resto de las secciones, etc)
+- Usar una paleta de fondo para mejorar el Home.
+- Breadcumbs no funcionan link.
+- El "Volver" no tiene sentido si se usa bien el Breadcumbs.
+- El videojuego “4 en Línea" debe tener un contenedor. Ojo con la barra de íconos. Cuidar la alineación
+- Adonde veo los Favoritos?
+- Ojo con el uso de Paneles en la web del videojuego.
+- Hay algunas secciones como "Dentro del juego" o los 4 personajes que deben reacomodarse.
+- En la página del juego se contempla la posibilidad de agrandar la pantalla?
+- Usar un patrón para sección Comentarios.
+- Como se envía un comentario luego de escribirlo?
+- Alineación en sección Comentarios
+- Publicidad en la página del juego? Justificaciones de esa posición?
+- En el formulario de Signup aparecen algunos mensajes raros como “Listo! Disfruta del juego”
+- Faltan campos en el form de Signup (nickname, etc)
+- Falta captcha en el form de login/signup
+- Alineación de componentes en el formulario de registro.
+- Qué hacen los “íconos” en el formulario de login/registro.
+- Usar patrón de requerido para campos obligatorios
+- Está mal usado la forma en que permiten loguearse con redes sociales (alineación, posición, patrón, etc).
+- No se usa ningún patrón para Login/signup
+
+Algunos de Uds ya están trabajando en la migración de Figma al código HTML (JS y CSS). Vimos varios casos en la práctica de ayer con alguna prácticas mejorables. Principalmente vimos que están encarando el desarrollo a partir de cada componente y no desde el todo. 
+
+Creemos mejor entonces, refrescar ciertos conceptos de desarrollo antes que sigan avanzando.
+
+
+El primer paso de la migración debería ser crear la estructura (HTML) del sitio completo: diseñar y pensar la solución general, identificar todos los componentes que va a tener nuestro sitio (header, carruseles, menús, footer, etc) y luego mapearlas a etiquetas HTML: <header> <footer> <main> <section> <sidebar> etc etc. 
+
+En este primer paso la idea es focalizarnos exclusivamente en la estructura y tener un sitio estático y sin estilos. En esta etapa se pueden definir ciertos estilos en nuestro archivo de CSS, pero el objetivo de estos estilos sería principalmente ubicar los componentes que desarrollamos.
+
+
+Una vez que tengamos la estructura, el siguiente paso ya si sería trabajar sobre los estilos en sí, para darle forma a la presentación (CSS). En este paso de ser necesario se puede empezar a trabajar con cierto código Javascript, pero solamente si es necesario para la presentación.
+
+RECORDATORIO: en el archivo CSS, aplicar los estilos a clases, NO aplicar estilos directamente a las etiquetas.
+
+
+Finalmente agregaremos todo el comportamiento necesario con código Javascript.
+
+
+Siguiendo este orden y forma de abordar la solución van a lograr un sitio más robusto, modificable y legible, van a trabajar más ordenados y más rápido.
+
+
+<!-- <div class="loading-container">
+        <div class="contenedor">
+            <div class="loader">
+                <div class="dino dino-corriendo"></div>
+            </div>
+            <p> Loading . . . </p>
+        </div>
+        <div class="loading-progress">
+            <div class="loading-bar"></div>
+            <div class="loading-text">Cargando...</div>
+        </div>
+    </div> -->
+    <!-- <script src="../Js/carga.js"></script> -->
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+    Hola Luca, van las correcciones del tpe2. Cualquier cosa lo vemos en clase
+- Colocaron un banner principal en el Home y está animado, aunque es medio invasivo su tamaño.
+ Mejoren las imágenes que tienen en él. (la de Pacman por ejemplo está muy pixelada)
+- Ojo con la resolución que usaron (debo ver la web en un 67% para que se comporte correctamente).
+- La animación circular 360 no queda muy bien, ppalmente en botones grandes como “Registrarse”.
+- Hay problemas de uniformidad con algunos botones (tamaño de botones “Registrarse” e “Iniciar sesión”)
+- La animación luego de registrarse es muy corta, se ve cortada. (pareciera que es de unos papelitos cayendo o similar). Revisar.
+- Muy bien usado el fondo animado de efecto líquido, no así la del fondo con los papelitos,
+ que no se entiende y parece un conjunto de manchas (ppalmente cuando se scrollea).
+- Reveer las tipografías usadas en el Fat Footer y agregar más links. (la sección con todos los idiomas no tiene mucho sentido)
+- Ver algunos íconos (ppalmente los de redes sociales en la web del juego)
+- Botones de formulario son distintos a los de “Enviar comentario” o “Agregar a favorito”).
+- Se puede mejorar el esquema de toda la info que tiene la card del videojuego. Cuando le colocan precio, la imagen del videojuego en el card se coloca más arriba. Debe pasar algo parecido cuando el nombre del juego es largo. Prueben de achicar fuentes, etc
+- Los botones de scroll de los caruseles de categorías son medio inconexos del resto del Home.
+- El Fat footer tiene más links que TPE1 pero no es fat footer. (ver casos online con el ayudante)
+- Hay algunos recursos gráficos que no se encuentran (vr imágenes en categoría Simulación).
+- Revisar las animaciones Hover y hacer las tres que se piden.
+- Arreglar la disposición en versión Mobile de HOME.
+--------------------------------------------------------------------------------------------------------------------------------------

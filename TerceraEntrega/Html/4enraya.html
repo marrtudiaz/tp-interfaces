@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,600;1,700&family=Roboto:ital,wght@0,300;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../Css/gameMenu.css">
+    <link rel="stylesheet" href="../Css/gameStyle.css">
+    <link rel="stylesheet" href="../Css/game.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body id="fondo">
+    <header id="header">
+        <div class="left">
+            <a id="logo" href="home.html">
+                <img class="imagenHeader" src="../images/Dino1.png" alt="">
+            </a>
+        </div>
+        <div class="right">
+            <button id="menuUserBtn" class="botHeader"><img class="imagenHeader"
+                    src="../images/icons8-super-mario-120.svg" alt=""><img class="imagenUsuario"
+                    src="../images/flechaDesplegar.svg" alt=""></button>
+        </div>
+    </header>
+    <!-- Menu Usuario -->
+    <nav id="menuPerfilUser" class="cerrado">
+        <button id="cerrarMenuBtn" class="closeUserMenu"><box-icon name='x' color='#939ab0'></box-icon></button>
+        <img class="imagenHeader" src="../images/icons8-super-mario-120.svg" alt="">
+        <p class="userName">LollyPop34</p>
+        <p>mateodesm@gmail.com</p>
+        <div class="menu-icon">
+            <box-icon name='user' color='#939ab0'></box-icon>
+            <p>Mi perfil</p>
+        </div>
+        <div class="menu-icon">
+            <box-icon type='solid' name='edit' color='#939ab0'></box-icon>
+            <p>Editar perfil</p>
+        </div>
+        <div class="menu-icon">
+            <box-icon name='cog' color='#939ab0'></box-icon>
+            <p>Configuración</p>
+        </div>
+        <a href="index.html " class="menu-icon">
+            <box-icon name='log-out' flip='vertical' color='#939ab0'></box-icon>
+            <p>Cerrar sesión</p>
+        </a>
+    </nav>
+    <!-- Fin Menu Usuario -->
+    <main id="content">
+        <div id="bread">
+            <p><span><a href="home.html">INICIO</a></span> >> ESTRATEGIAS >> 4 EN LINEA</p>
+        </div>
+        
+
+        <div id="init_juego" class="contMenu">
+            
+            <div class="gameMen">
+                <div class="connect">
+                    <h2>PAC-MAN vs BLINKY</h2>
+                </div>
+                <div class="menuces">
+                    <form class="size">
+                        <h3 class="titulo tituloCentrado">JUGADOR 1:<br> Seleccione personaje</h3>
+                        <label>
+                            <input type="radio" class="jugador1" name="jugador1" value="PacMan" checked>
+                            <img src="../images/4enraya/PacManFicha.png" alt="">
+                        </label><br>
+                        <label>
+                            <input type="radio" class="jugador1" name="jugador1" value="MsPacMan">
+                            <img src="../images/4enraya/MsPacManFicha.png" alt="">
+                        </label><br>
+                        <label>
+                            <input type="radio" class="jugador1" name="jugador1" value="JrPacMan">
+                            <img src="../images/4enraya/JrPacManFicha.png" alt="">
+                        </label><br>
+                        <label>
+                            <input type="radio" class="jugador1" name="jugador1" value="SuperPacMan">
+                            <img src="../images/4enraya/SuperPacManFicha.png" alt="">
+                        </label><br>
+                    </form>
+                    <div class="size">
+                        <div class="title">
+                            <h2>MODO DE JUEGO</h2>
+                        </div>
+                        <label for="html">
+                              <input type="radio" class="cantidad"id="option1" name="boardSize" value="4" checked>
+                              <span>4 en línea</span>
+                            </label><br>
+                        <label for="css">
+                            <input type="radio" class="cantidad" id="option2" name="boardSize" value="5">
+                            <span>5 en línea</span>
+                            </label><br>
+                        <label for="javascript">
+                            <input type="radio" class="cantidad" id="javascript" name="boardSize" value="6">
+                            <span>6 en línea</span>
+                            </label><br>
+                    </div>
+                    
+                    <form class="size">
+                        <h3 class="titulo tituloCentrado"> JUGADOR 2:<br> Seleccione personaje</h3>
+                        <label>
+                            <input type="radio" class="jugador2" name="jugador2" value="blinky">
+                            <img src="../images/4enraya/PickyFicha.svg" alt="">
+                        </label><br>
+                        <label>
+                            <input type="radio" class="jugador2" name="jugador2" value="Pinky" checked>
+                            <img src="../images/4enraya/PinkyFicha.png" alt="">
+                        </label><br>
+                        <label>
+                            <input type="radio" class="jugador2" name="jugador2" value="Inky">
+                            <img src="../images/4enraya/InkyFicha.png" alt="">
+                        </label><br>
+                        <label>
+                            <input type="radio" class="jugador2" name="jugador2" value="Clyde">
+                            <img src="../images/4enraya/ClydeFicha.png" alt="">
+                        </label><br>
+                    </form>
+                </div>
+                <div class="playBtn">
+                    <button id="btn_play" class=""><img class="" id="fichaBtn" src="../images/4enraya/PacmanFicha.svg"><span> Jugar</span></button>
+                </div>
+            </div>
+        </div>
+        <div id="contenedor_juego" class="juego inactive">
+            <!-- ACA IRIA JUGABILIDAD-->
+            
+            <div class="gameInfo">
+                <div class="options">
+                    <button id="btn_reset" class="button-49"><img class="" id="fichaBtn" src="../images/4enraya/Reiniciar juego2.png"><span> Reiniciar</span></button>
+                </div>
+                <div class="turno" id="player1">
+                    <img id="fichaPlayer1" src="">
+                    <h2>TURNO DE</h2><h2 id="turno1"></h2>
+                </div>
+    
+                <div id="theWinnerIs" class="inactive">
+                    <h2 id="quienGano"></h2>
+                    <h2 id="sinTiempo"></h2>
+                </div>
+    
+                <div id="tmp">
+                    <h2>TIEMPO RESTANTE</h2>
+                    <h2 id="cronometro"></h2>
+                </div>
+                <div class="turno invisible" id="player2">
+                    <img id="fichaPlayer2" src="">
+                    <h2>TURNO DE</h2><h2 id="turno2"></h2>
+                </div>
+                <div class="options">
+                    <button id="btn_exit" class="button-49"><img class="" id="fichaBtn" src="../images/4enraya/cerrar-removebg-preview.png"><span> Salir</span></button>
+                </div>
+            </div>
+            <!-- ACA IRIA PANTALLA PRESENTACION DEL JUEGO-->
+            <section class="invisible" id="tablero">
+                <!-- ACA IRIA EL TABLERO DEL JUEGO-->
+                <canvas id="canvas" class="canvas" width="1000" height="750"></canvas>
+                
+    
+            </section>
+        </div> 
+        <div class="contant">
+                <figure id="Varjuego">
+                    <div id="menuJuego" class="div3">
+                        <div id="menuIzquierda">
+                            <img src="../images/icon-face.svg" alt="">
+                            <img src="../images/icon-ig.svg" alt="">
+                            <img src="../images/icon-twitter.svg" alt="">
+                            <img src="../images/correo-icon.svg" alt="">
+                            <img src="../images/wsp-icon.svg" alt="">
+                        </div>
+                        <div id="menuDerecha">
+                            <img src="../images/fullscreen3.png" alt="">
+                        </div>
+                    </div>
+                </figure>
+            <section id="reglasJuego">
+                
+                <button class="button-fav">Agregar a favoritos</button>
+                <h1>4 EN RAYA PAC-MAN VS BLINKY</h1>
+                <h2>Objetivo del Juego</h2>
+                <p>Los jugadores compiten por ser el primero en formar una línea continua de cuatro discos. La línea
+                    puede
+                    ser horizontal, vertical o diagonal. ¡Derrota a tu oponente para ganar la partida! </p>
+                <h2>¿Cómo se juega?</h2>
+                <p>
+                    Blinky y Pac-Man se turnan para soltar sus discos en el interior de un tablero de juego vertical con
+                    el objetivo de formar una línea de cuatro discos.
+
+                    ¡Prepárate para el duelo más divertido! Cada uno tiene sus propios discos en un tablero vertical de
+                    7 columnas y 6 filas, con un total de 42 espacios para conquistar en 21 emocionantes turnos.
+                    ¡Cuidado con tu oponente! Observa sus movimientos y usa tus discos para bloquear sus intentos de
+                    hacer un "4 en raya". ¡Que comience la diversión espeluznante!
+
+                    Consejo: ¡No pierdas de vista los movimientos de tu oponente! Usa tus propios discos para bloquearlo
+                    cuando esté a punto de formar 4 en raya.
+                  ¿Sabías la historia del 4 en raya? Aqui puedes acceder a más sobre como se originó el juego.
+                </p>
+                <h2>Instrucciones para jugar a 4 en raya PacMan vs Blinky:</h2>
+                <p>
+                    1.Selecciona tu personaje: Escoge entre PacMan o su familia, o Blinky y sus amigos fantasmas  para comenzar la partida.<br>
+                    2.Coloca tus fichas: En tu turno, haz clic con el botón izquierdo del mouse en la columna del tablero donde desees soltar tu ficha. Las fichas se representarán como puntos para PacMan y letras 'P' para PacMan, y 'B' para Blinky.<br>
+                    3.Objetivo: Tu objetivo es formar una línea de cuatro fichas consecutivas en cualquier dirección: horizontal, vertical o diagonal, antes que tu oponente. PacMan debe intentar crear su línea ganadora, mientras que Blinky debe detenerlo o formar su propia línea.<br>
+                    4.Estrategia: Utiliza tu ingenio y estrategia para bloquear a tu oponente mientras intentas formar tu propia línea ganadora. PacMan debe evitar a Blinky, y Blinky debe atrapar a PacMan antes de que complete su línea.<br>
+                    5.Ganador: El primer jugador en lograr 4 en raya en cualquier dirección será el ganador y obtendrá la gloria de PacLand o el orgullo de los fantasmas.<br>
+                    ¡Disfruta del juego de 4 en raya con la emocionante temática de PacMan vs Blinky, y usa el mouse para colocar tus fichas y tomar decisiones estratégicas!
+                </p>
+                <img src="../images/controles1.png" alt="">
+                <img src="../images/controles2.png" alt="">
+                <h2>Dentro del juego</h2>
+                <div class="wrapper">
+                    <div class="gallery">
+                        <div class="image"><span><img src="../images/ingame1.png" alt=""></span></div>
+                        <div class="image"><span><img src="../images/ingame2.png" alt=""></span></div>
+                        <div class="image"><span><img src="../images/ingameVideo.png" alt=""></span></div>
+                    </div>
+                </div>
+                <div class="preview-box">
+                    <div class="details">
+                        <span class="titles">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+                        <span class="icon fas fa-times"></span>
+                    </div>
+                    <div class="image-box">
+                        <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+                        <div class="slide next"><i class="fas fa-angle-right"></i></div>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="shadow"></div>
+                <div class="respuestas">
+                <h3>Respuestas</h3> <p>5 comentarios</p>
+                 </div>
+                <div id="comentarios">
+                    <div class="text-area-button">
+                    <textarea name="textarea" rows="8" cols="70"> </textarea>
+                    <button class="button-fav">Enviar</button>
+                </div>
+                <p>Ordenar por mejor</p>
+                
+
+                <div class="seccion-comentarios">
+                    <div class="section-hija-comentarios">
+                    <img src="../images/iconosUser/icons8-jake.svg" alt="">
+                    <div id="comentario">
+                        <p>StarBlue24</p>
+                        <p>1 abril, 2022</p>
+                        <p class="coment"> jajja re divertido 💩 😎 👽</p>
+                    </div>
+                  </div>
+                    <div class="opciones">
+                        <p>Responder</p> <p>Compartir</p>
+                    </div>
+                </div>
+
+
+                <div class="seccion-comentarios">
+                    <div class="section-hija-comentarios">
+                    <img src="../images/iconosUser/icons8-batman.svg" alt="">
+                    <div id="comentario">
+                        <p>Fm56_k</p>
+                        <p>1 marzo, 2021</p>
+                        <p class="coment">El mejor juego lejooos! 💚 💯</p>
+                    </div>
+                  </div>
+                    <div class="opciones">
+                        <p>Responder</p> <p>Compartir</p>
+                    </div>
+                </div>
+
+                <div class="seccion-comentarios">
+                    <div class="section-hija-comentarios">
+                    <img src="../images/iconosUser/icons8-finn.svg" alt="">
+                    <div id="comentario">
+                        <p>theBestie_27</p>
+                        <p>3 mayo, 2021</p>
+                        <p class="coment">Jajaja aguante pacman, a quien mas le gusta? 🤪🤪</p>
+                    </div>
+                  </div>
+                    <div class="opciones">
+                        <p>Responder</p> <p>Compartir</p>
+                    </div>
+                </div>
+
+                <div class="seccion-comentarios">
+                    <div class="section-hija-comentarios">
+                    <img src="../images/iconosUser/icons8-son-goku.svg" alt="">
+                    <div id="comentario">
+                        <p>the_bestPlayer</p>
+                        <p>4 septiembre, 2020</p>
+                        <p class="coment"> No me gusto para nada 💩  </p>
+                    </div>
+                  </div>
+                    <div class="opciones">
+                        <p>Responder</p> <p>Compartir</p>
+                    </div>
+                </div>
+
+
+
+        
+            </section>
+        </div>
+        <div class="botFooter">
+               
+            <a id="scrollTop" href="#fondo"><img src="" alt=""><img src="../images/scrollToTopFooter.svg"
+                    alt=""></a>
+        </div>
+    </main>
+  
+    <footer id="footer">
+        <svg id="svg" viewBox="0 0 120 28">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+               1 0 0 0 0  
+               0 1 0 0 0  
+               0 0 1 0 0  
+               0 0 0 13 -9" result="goo " />
+                    <xfeBlend in="SourceGraphic" in2="goo" />
+                </filter>
+                <path id="wave"
+                    d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+            </defs>
+
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+
+            <g class="gooeff" filter="url(#goo)">
+                <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+                <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+                <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+                <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+                <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+                <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+                <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+                <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+                <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+                <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+                <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+                <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+
+                <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+                <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+                <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+                <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+                <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+                <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            </g>
+            <!-- g mask="url(#xxx)">
+        <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </g>
+      </g -->
+
+        </svg>
+        <div id="contFooter">
+            
+            <div class="info">
+                <ul class="legalPrivacidad">
+                    <p>Legal & Privacidad</p>
+                    <li>Políticas de Privacidad</li>
+                    <li>Información de Marcas Registradas</li>
+                    <li>Términos de Uso</li>
+                    <li>Publica tu juego</li>
+                    <li>Políticas de reembolso de la tienda</li>
+                    <li>Nuestras politicas</li>
+                    <li>Seguridad de la cuenta</li>
+                    <li>Publicidad</li>
+                    <li>Cyberbullying</li>
+                   
+                </ul>
+                <ul class="sobreNosotros">
+                    <p>Sobre nosotros</p>
+                    <li>FAQs</li>
+                    <li>Gestionar preferencias</li>
+                    <li>Contacto</li>
+                    <li>Nuestra empresa</li>
+                    <li>Socios</li>
+                    <li>Horarios de atención</li>
+                    <li>Ubicaciones de la empresa</li>
+                    <li>Información legal de la empresa</li>
+                    <li>Centro de ayuda</li>
+                 
+                </ul>
+
+                <ul class="ayuda">
+                    <p>Ayuda</p>
+                    <li>Preguntas frecuentes</li>
+                    <li>Como funciona la app</li>
+                    <li>Guia de usuario</li>
+                    <li>Solicitudes de asistencia</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Como jugar</li>
+                    <li>Como crear un usuario</li>
+                    <li>Juegos con AdobeFlash</li>
+                    <li>Resumen de precios</li>
+                    <li>Accesibilidad</li>
+                  
+                </ul>
+
+                <ul class="navegacion">
+                    <p>Navegación</p>
+                    <li>Home</li>
+                    <li>Servicio</li>
+                     <li>Favoritos</li>
+                    <li>Blog</li>
+                    <li>Juegos gratis</li>
+                    <li>Juegos en tendencia</li>
+                    <li>Juegos premium</li>
+                    <li>Juegos multijugador</li>
+                    
+                </ul>
+
+                <ul>
+                    <p>SEGUINOS</p>
+            <li><img src="../images/icon-face.svg" alt=""></li>
+            <li><img src="../images/icon-twitter.svg" alt=""></li>
+           
+                  </ul>  
+
+            </div>
+                
+            
+       
+            </div>
+            <div class="copy">
+                <p>Copyright © 2023 JURASSIC JUEGOS todos los derechos reservados</p>
+            </div>
+    </footer>
+            
+    <script src="../Js/galery.js"></script>
+    <script src="../Js/userMenu.js"></script>
+    <script src="../Js/cronometro.js"></script>
+    <script src="../Js/jugar.js"></script>
+    <script src="../Js/tablero.js"></script>
+    <script src="../Js/ficha.js"></script>
+    <script src="../Js/juego.js"></script>
+
+
+</body>
+
+</html>

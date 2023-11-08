@@ -1,0 +1,546 @@
+:root{
+    --Principal : #430E7F;
+    --Principal1 : #340768;
+    --Principal2 : #25034B;
+    --Principal3 : #1E023D;
+    --Principal-1 : #8C55CB;
+    --Principal-2 : #6D3CA5;
+    --Principal-3 : #8C55CB;
+    --Acento : #B700FF;
+    --Sombra :  #222;
+    --Blanco : #E0E0E0;
+}
+.game_img {
+    width: 100px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.share {
+    width: 40px;
+    height: 40px;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+
+.encabezado_juego_seleccionado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.titulo_juego_img {
+    display: flex;
+    margin-top: 10px;
+}
+
+.titulo_juego_img h2 {
+    margin-top: 18px;
+    margin-bottom: 4px;
+}
+
+.contenedor_carrousel {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: var(--Blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.button_play {
+    background-color: var(--Acento);
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #17171A;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    width: 45%;
+    height: 2.5rem;
+    border-radius: 21rem;
+    border-bottom: solid var(--Sombra);
+    color: var(--Blanco);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cont_btn_play {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+.descripcion_juego {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.como_jugar {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.similares {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--Blanco);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.similar_game img {
+    width: 70px;
+    border-radius: 4px;
+}
+
+figcaption p {
+    white-space: break-spaces;
+}
+
+.similar_game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    padding: 4px;
+}
+
+#games {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.swiper {
+    width: 80%;
+    position: absolute !important;
+    top: 248px;
+    height: 300px;
+    left: 9vw;
+}
+
+.swiper-slide {
+    width: 100%;
+    background-size: contain;
+}
+
+.swiper-slide img {
+    max-width: 331px;
+}
+
+.contenedor_carrousel div {
+    height: 300px;
+}
+
+.como_jugar a {
+    color: black;
+}
+
+.how_to_play {
+    background-color: #F7F4E3;
+    margin-top: 1rem;
+    /*  padding: 1rem*/
+}
+
+.how_to_play h2 {
+    margin-top: 0;
+    color: #17171A;
+}
+
+.how_to_play h3 {
+    color: #17171A;
+    font-weight: 600;
+}
+
+.gifAndButton {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textInstructions {
+    background-color: #C2C4D2;
+    padding: 3rem;
+}
+
+.how_to_play img {
+    position: relative;
+    max-width: 100%;
+}
+
+.jello-vertical {
+    -webkit-animation: jello-vertical 0.9s ease-in-out 2s both;
+    animation: jello-vertical 0.9s ease-in-out 2s both;
+}
+
+@-webkit-keyframes jello-vertical {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-vertical {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(0.85, 1.15, 1);
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@media (min-width: 1000px) {
+    .hamburguesa {
+        display: none;
+    }
+    .nombre_logo {
+        display: block;
+    }
+    #logoGame {
+        display: flex;
+        justify-content: left;
+    }
+    .logo a {
+        display: flex;
+        align-items: center;
+    }
+    .logo a p {
+        margin-bottom: 0;
+        font-size: 26px;
+        padding-left: 1rem;
+    }
+    .header {
+        position: absolute;
+    }
+    .menu {
+        display: block;
+        position: absolute;
+        left: 25vw;
+        height: 4.5rem;
+        width: auto;
+        background-color: transparent;
+    }
+    .subtitulo_menu {
+        display: none;
+    }
+    .header-menu {
+        display: none;
+    }
+    .botones_menu {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .botones_menu li {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .botones_menu li:hover {
+        background-color: #23233fc5;
+    }
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .encabezado_juego_seleccionado {
+        display: flex;
+    }
+    .titulo_juego_img {
+        width: 65%;
+        display: flex;
+        justify-content: right;
+        margin-left: 0%;
+    }
+    .game_img {
+        width: 25rem;
+        border-radius: 4px;
+        margin-right: 0.5em em;
+    }
+    .gameName {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gameName h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .gameName p {
+        font-size: 2rem;
+    }
+    .descripcion_juego {
+        margin-left: 1rem;
+    }
+    .descripcion_juego h3 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+    .como_jugar {
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        margin-top: 4rem;
+        padding-top: 1rem;
+    }
+    
+    #shareDesktop {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        height: 50%;
+        align-items: center;
+        margin-left: 1rem;
+        justify-content: center;
+    }
+    .share {
+        width: 70px;
+        height: 70px;
+    }
+    .swiper {
+        display: none;
+        justify-content: center;
+        left: 0;
+        width: 100%;
+    }
+    .swiper-slide {
+        width: 100% !important;
+        text-align: center;
+    }
+    .contenedor_carrousel div {
+        height: 17rem;
+        margin-top: 0.3rem;
+    }
+    .contenedor_carrousel a {
+        max-width: 400px;
+    }
+    .contenedor_carrousel a:hover {
+        background-color: #ABC169;
+    }
+    #relleno {
+        display: none;
+    }
+    .button_play {
+        margin-top: 5rem;
+    }
+    .similares {
+        padding-right: 12rem;
+        padding-left: 12rem;
+        background: #C2C4D2;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .similar_game {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 10rem;
+        padding: 4px;
+    }
+    .similar_game img {
+        width: 8rem;
+        border-radius: 4px;
+    }
+    .swiper-button-prev {
+        margin-left: 12rem;
+    }
+    .swiper-button-next {
+        margin-right: 12rem;
+    }
+
+    .redes {
+        display: flex;
+    }
+
+    .carousel {
+        position: absolute;
+        width: 90%;
+        height: 90%;
+        transform-style: preserve-3d;
+        animation: rotate360 60s infinite forwards linear;
+    }
+    .carousel__face,
+    .carousel__face2 {
+        position: absolute;
+        width: 300px;
+        height: 187px;
+        top: 20px;
+        left: 10px;
+        right: 10px;
+        background-size: cover;
+        box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+        display: flex;
+    }
+    .carousel__face:nth-child(1) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-01.jpg?3640363");
+        transform: rotateY( 0deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(2) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-02.jpg?3640363");
+        transform: rotateY( 40deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(3) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-03.jpg?3640363");
+        transform: rotateY( 80deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(4) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-04.jpg?3640363");
+        transform: rotateY(120deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(5) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-05.jpg?3640363");
+        transform: rotateY(160deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(6) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-06.jpg?3640363");
+        transform: rotateY(200deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(7) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-07.jpg?3640363");
+        transform: rotateY(240deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(8) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-08.jpg?3640363");
+        transform: rotateY(280deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face:nth-child(9) {
+        background-image: url("https://www.casualarena.com/bundles/app/st/games/co4/slider/es/conecta-4-09.jpg?3640363");
+        transform: rotateY(320deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face2:nth-child(1) {
+        background-image: url("../images/screenshots/playGame1.png");
+        transform: rotateY( 0deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face2:nth-child(2) {
+        background-image: url("../images/screenshots/playGame2.png");
+        transform: rotateY( 40deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face2:nth-child(3) {
+        background-image: url("../images/screenshots/playGame3.png");
+        transform: rotateY( 80deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face2:nth-child(4) {
+        background-image: url("../images/screenshots/playGame1.png");
+        transform: rotateY(120deg) translateZ(430px);
+        background-size: cover;
+    }
+    .carousel__face2:nth-child(5) {
+        background-image: url("../images/screenshots/playGame2.png");
+        transform: rotateY(160deg) translateZ(430px);
+        background-size: cover;
+    }
+    .carousel__face2:nth-child(6) {
+        background-image: url("../images/screenshots/playGame3.png");
+        transform: rotateY(200deg) translateZ(430px);
+        background-size: cover;
+    }
+    .carousel__face2:nth-child(7) {
+        background-image: url("../images/screenshots/playGame1.png");
+        transform: rotateY(240deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face2:nth-child(8) {
+        background-image: url("../images/screenshots/playGame2.png");
+        transform: rotateY(280deg) translateZ(430px);
+        background-size: contain;
+    }
+    .carousel__face2:nth-child(9) {
+        background-image: url("../images/screenshots/playGame3.png");
+        transform: rotateY(320deg) translateZ(430px);
+        background-size: contain;
+    }
+    @keyframes rotate360 {
+        from {
+            transform: rotateY(0deg);
+        }
+        to {
+            transform: rotateY(-360deg);
+        }
+    }
+}
+
+
+/********************************************/
